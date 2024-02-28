@@ -34,7 +34,7 @@
                 <div class="row">
                     <div v-for="(element, index) in diskList" :key="index" class="col-3">
                         <div class="card" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img :src="element.poster" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">{{ element.title }}</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
