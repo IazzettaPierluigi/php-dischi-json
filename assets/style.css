@@ -7,5 +7,9 @@
 }
 
 body{
-    background-color: #1d2d3c;
+    background-color: #1d2d3c !important;
+}
+
+.card-body{
+    background-color: #112030 !important;
 }

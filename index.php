@@ -31,11 +31,11 @@
 
         <main>
             <div class="container mt-5">
-                <div class="row">
-                    <div v-for="(element, index) in diskList" :key="index" class="col-3">
-                        <div class="card" style="width: 18rem;">
+                <div class="row d-flex">
+                    <div v-for="(element, index) in diskList" :key="index" class="col-4 d-flex justify-content-center">
+                        <div class="card mt-5 border-0" style="width: 18rem;">
                             <img :src="element.poster" class="card-img-top" alt="...">
-                            <div class="card-body text-center">
+                            <div class="card-body text-center text-white rounded border-0">
                                 <h5 class="card-title">{{ element.title }}</h5>
                                 <p class="card-text">{{ element.author }}</p>
                                 <p class="card-text">{{ element.year }}</p>
