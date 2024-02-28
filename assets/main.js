@@ -9,7 +9,7 @@ createApp({
         }
     },
     mounted() {
-
+        this.disksCall()
     },
     methods: {
         disksCall() {
