@@ -3,7 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            title: 'ciao modno',
+
             apiUrl: 'server.php',
             diskList: []
         }
