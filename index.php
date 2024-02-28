@@ -21,7 +21,7 @@
 
     <div id="app">
         <!-- header -->
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar header-color">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <i class="fa-brands fa-spotify"></i>
@@ -30,15 +30,15 @@
         </nav>
 
         <main>
-            <div class="container">
+            <div class="container mt-5">
                 <div class="row">
                     <div v-for="(element, index) in diskList" :key="index" class="col-3">
                         <div class="card" style="width: 18rem;">
                             <img :src="element.poster" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body text-center">
                                 <h5 class="card-title">{{ element.title }}</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
+                                <p class="card-text">{{ element.author }}</p>
+                                <p class="card-text">{{ element.year }}</p>
 
                             </div>
                         </div>
